@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FormComponent } from './form/form.component';
 import { IngresosComponent } from './ingresos/ingresos.component';
 import { EgresosComponent } from './egresos/egresos.component';
+import { Http2ServerRequest } from 'node:http2';
 
 @NgModule({
   declarations: [				
@@ -13,10 +15,12 @@ import { EgresosComponent } from './egresos/egresos.component';
       HeaderComponent,
       FormComponent,
       IngresosComponent,
-      EgresosComponent
+      EgresosComponent,
+      
    ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
