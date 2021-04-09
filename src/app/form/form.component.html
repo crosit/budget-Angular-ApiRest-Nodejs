@@ -1,19 +1,21 @@
 <div class="container mt-2">
-  <div class="row">
-    <div class="col-1 p-2">
-      <select name="" id="">
-        <option value="ingreso">+</option>
-        <option value="egreso">-</option>
-      </select>
+  <form action="http://localhost:3002/data" method="POST">
+    <div class="row">
+      <div class="col-1 p-2">
+        <select name="validation" id="val">
+          <option value="1" >+</option>
+          <option value="2">-</option>
+        </select>
+      </div>
+      <div class="col-6 p-1">
+        <input type="text" class="form-control" value="Nombre" name="name">
+      </div>
+      <div class="col-3 p-1">
+        <input type="text" class="form-control" value="Costo" name="cost">
+      </div>
+      <div class="col-2 p-1">
+        <button class="btn" type="submit">enviar</button>
+      </div>
     </div>
-    <div class="col-6 p-1">
-      <input type="text" class="form-control" value="Nombre">
-    </div>
-    <div class="col-3 p-1">
-      <input type="number" class="form-control" value="0">
-    </div>
-    <div class="col-2 p-1">
-      <button class="btn">enviar</button>
-    </div>
-  </div>
+  </form>
 </div>

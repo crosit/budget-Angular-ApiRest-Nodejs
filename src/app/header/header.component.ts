@@ -9,6 +9,8 @@ import { DataConfig } from '../dataConfig.service';
 export class HeaderComponent  {
 
   data : any = [];
+  income: number = 0;
+  expense: number = 0;
   suma : number = 0;
   
 
@@ -19,11 +21,12 @@ export class HeaderComponent  {
       console.log(this.data);
       for(let i of this.data){
         if(i.validation == 1){
-          this.suma += i.cost;
+          this.income += i.cost;
         }else{
-          this.suma -= i.cost;
+          this.expense += i.cost;
         }
       }
+      this.suma= this.income - this.expense;
       
     });
     

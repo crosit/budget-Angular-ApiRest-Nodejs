@@ -2,16 +2,16 @@
 <div class="star">
   <div class="presupuesto text-center">
     <p>Presupuesto Disponible:</p>
-    <h1>{{suma}}</h1>
+    <h1>{{suma | currency:'MNX':'$':'1.2-2'}}</h1>
     <div class="container ingresos ">
       <p class="categoria">INGRESOS</p>
       
-      <p class="saldo">$325</p> 
+      <p class="saldo">{{income | currency:'MNX':'$':'1.2-2'}}</p> 
     </div>
     <div class="container egresos">
       <p class="categoria">EGRESOS</p>
       
-      <p class="saldo">$200</p> 
+      <p class="saldo">{{expense | currency:'MNX':'$':'1.2-2'}}</p> 
     </div>
   </div>
 </div>
