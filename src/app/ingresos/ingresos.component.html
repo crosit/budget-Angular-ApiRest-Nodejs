@@ -1,16 +1,17 @@
 
 <div class="ingresosColor">
-<p class="fs-3 ingresosColor">
-  Ingresos
-</p>
-<div >
-  <div class="row">
-    <div class="col-8 name">
-      sueldo
-    </div>
-    <div class="col-4 cost">
-      25.23
-    </div>
-  </div>
+  <p class="fs-3 ingresosColor">
+    Ingresos
+  </p>
   
+  <div *ngFor="let incomeElement of incomeData">
+    <div class="row">
+      <div class="col-8 name">
+        {{incomeElement.name}}
+      </div>
+      <div class="col-4 cost">
+        {{incomeElement.cost}}
+      </div>
+    </div>
+  </div> 
 </div>

@@ -7,7 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { FormComponent } from './form/form.component';
 import { IngresosComponent } from './ingresos/ingresos.component';
 import { EgresosComponent } from './egresos/egresos.component';
-import { Http2ServerRequest } from 'node:http2';
+
 
 @NgModule({
   declarations: [				
