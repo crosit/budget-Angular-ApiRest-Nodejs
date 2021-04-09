@@ -1,0 +1,49 @@
+.star{
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 20px;
+    background-image: url(../../assets/space.png);
+}
+.general{
+    text-align: center;
+    color: white;
+    
+}
+.contenido{
+    background-color: green;
+}
+
+
+.presupuesto {
+    font-size: 24px;
+    color: #fff;
+}
+
+.ingresos{
+    text-align: left;
+    background-color: rgba(11, 243, 108, 0.589);
+    border-radius: 5em;
+    width: 50%;
+    padding-right: 50px;
+}
+.egresos{
+    text-align: left;
+    background-color: rgba(233, 10, 10, 0.623);
+    border-radius: 5em;
+    width: 50%;
+    padding-right: 50px;
+}
+
+.saldo{
+    text-align: right;
+
+}
+
+.categoria{
+    float: left;
+    color: black;
+}
+
+
