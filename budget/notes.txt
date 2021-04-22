@@ -1,0 +1,3 @@
+we crate the package.json whit the comant "npm init"
+we install dependencies "npm i mysql morgan"
+and dependencies only for development time "npm i -D nodemon express"
